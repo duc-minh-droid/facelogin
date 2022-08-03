@@ -1,6 +1,7 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
 import useLocalStorage from 'react-use-localstorage';
+import { ToastContainer, toast } from 'react-toastify';
 
 function Home() {
   const [isLoggedIn, setIsLoggedIn] = useLocalStorage('isLoggedIn', true)
